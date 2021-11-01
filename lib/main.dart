@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ac3/about_us.dart';
 
 void main() {
   runApp(
@@ -32,9 +33,17 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
+  var app;
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
+      if (index == 0) {
+        app = Center(
+          child: Text('AC3 Desenvolvimento Mobile', style: TextStyle(fontSize: 25),),
+        );
+      } else {
+        app = AboutUs();
+      }
     });
   }
 
@@ -44,9 +53,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       appBar: AppBar(
         title: const Text('AC3 Dev Mobile', style: TextStyle(fontSize: 30)),
       ),
-      body: Center(
-        child: Text('AC3 Desenvolvimento Mobile'),
-      ),
+      body: app,
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(

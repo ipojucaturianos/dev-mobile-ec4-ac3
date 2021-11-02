@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class AboutUs extends StatelessWidget {
   AboutUs({Key? key}) : super(key: key);
-  final developers = [
-    'Ellen Cristina Marques - 1900000',
-    'Filipe Verrone de Lima - 1903580',
-    'Gustavo Yudi Carvalho - 1900000',
-    'João Severino Godoi - 1900000',
-    'Leonardo Vargas - 1900000',
-    'Vinicius Tirelli - 1900000',
-  ];
+  final developers = '''
+    Ellen Carvalho - 1903635
+    Filipe Verrone - 1903580
+    Gustavo Carvalho - 1903565
+    João Severino - 1903601
+    Leonardo Vargas - 1903584
+    Vinicius Tirelli - 1903611
+  ''';
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class AboutUs extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('About Us - Developers', style: TextStyle(fontSize: 25),),
-            for (var i = 0; i < developers.length; i++) Text(developers[i], style: TextStyle(fontSize: 16),),
+            Padding(padding: EdgeInsets.all(10), child: Text(developers, style: TextStyle(fontSize: 16),)),
           ]
       ),
     );

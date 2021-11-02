@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ac3/about_us.dart';
+import 'package:ac3/image.dart';
 
 void main() {
   runApp(
@@ -42,7 +43,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           child: Text('AC3 Desenvolvimento Mobile', style: TextStyle(fontSize: 25),),
         );
       } else {
-        app = AboutUs();
+        if (index == 1) {
+          app = ImagePage();
+        } else {
+          app = AboutUs();
+        }
       }
     });
   }

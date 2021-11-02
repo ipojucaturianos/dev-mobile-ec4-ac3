@@ -15,9 +15,10 @@ class AboutUs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('About Us - Developers', style: TextStyle(fontSize: 25),),
-            for (var i = 0; i < developers.length; i++) Text(developers[i], style: TextStyle(fontSize: 15),),
+            for (var i = 0; i < developers.length; i++) Text(developers[i], style: TextStyle(fontSize: 16),),
           ]
       ),
     );

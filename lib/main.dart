@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ac3/about_us.dart';
 import 'package:ac3/image.dart';
+import 'package:ac3/game.dart';
 
 void main() {
   runApp(
@@ -34,19 +35,33 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
-  var app;
+  static Widget app = Center(
+    child: Text('AC3 Desenvolvimento Mobile', style: TextStyle(fontSize: 25),),
+  );
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
       if (index == 0) {
-        app = Center(
-          child: Text('AC3 Desenvolvimento Mobile', style: TextStyle(fontSize: 25),),
-        );
+        setState(() {
+          app = Center(
+            child: Text('AC3 Desenvolvimento Mobile', style: TextStyle(fontSize: 25),),
+          );
+        });
       } else {
         if (index == 1) {
-          app = ImagePage();
+          setState(() {
+            app = ImagePage();
+          });
         } else {
-          app = AboutUs();
+          if (index == 2) {
+            setState(() {
+              app = GamePage();
+            });
+          } else {
+            setState(() {
+              app = AboutUs();
+            });
+          }
         }
       }
     });

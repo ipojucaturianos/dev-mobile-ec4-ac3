@@ -1,17 +1,16 @@
 # dev-mobile-ec4-ac3
+
 Mobile Development class AC3
 
-A new Flutter project.
+# Engenharia da Computação
 
-## Getting Started
+# Computing Engineering
 
-This project is a starting point for a Flutter application.
+# Desenvolvedores
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ellen Marques Carvalho - 1903635
+Filipe Verrone de Lima - 1903580
+Gustavo Yudi Carvalho - 1903565
+João Godoi Severino - 1903601
+Leonardo Ricardo Vargas - 1903584
+Vinicius Tirelli Prestes - 1903611
